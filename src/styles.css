@@ -1,0 +1,282 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F5F5F5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10px;
+}
+
+/* App container styles */
+.app-container {
+  display: flex;
+  height: 100%;
+}
+
+/* Content container (main content) */
+.content-container {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+  width: 250px;
+  background-color: #4E8A8A;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px 0 0 15px;
+}
+
+/* Navbar link styles */
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Navbar link hover effect */
+.navbar a:hover {
+  background-color: #3b7e7e;
+}
+
+/* Form container (used in login/register) */
+.form-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: auto;
+  padding: 40px;
+}
+
+/* Form input fields */
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Form button */
+form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4E8A8A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Form button hover effect */
+form button:hover {
+  background-color: #3b7e7e;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Alert message */
+.alert {
+  background-color: #FFDDC1;
+  color: #F44336;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Todo list container */
+.todo-list-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Todo input section */
+.todo-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.todo-input input {
+  width: 45%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.todo-input button {
+  width: 45%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* Task list styling */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual task styling */
+.task-item {
+  background-color: #E0F7FA;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile container (user profile) */
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 30px;
+  width: 100%;
+}
+
+/* User info section */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile image styling */
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #B2DFDB;
+  overflow: hidden;
+}
+
+/* Profile image inside */
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Email text styling */
+.email-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Graph container */
+.graph-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Graph styling */
+.graph {
+  background-color: #FFEB3B;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 25px;
+}
+
+/* Headings styling */
+h2, h3 {
+  color: #4E8A8A;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Link styling */
+a {
+  color: #4E8A8A;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Forgotten task styling */
+.forgotten {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .user-info {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .profile-img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .graph-container {
+    width: 100%;
+  }
+}
